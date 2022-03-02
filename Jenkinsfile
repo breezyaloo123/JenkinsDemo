@@ -29,6 +29,7 @@ pipeline {
         always {
             archiveArtifacts artifacts: 'target/*.jar'
             junit 'target/surefire-reports/**/*.xml'
+            mail bcc: '', body: 'TEST', cc: '', from: '', replyTo: '', subject: 'Test', to: 'alassanesall771@gmail.com'
         }
     }
 }
