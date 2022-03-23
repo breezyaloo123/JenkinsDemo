@@ -1,7 +1,7 @@
 pipeline {
     agent any
     tools {
-        maven 'maven123'
+        maven 'maven32'
     }
     stages {
         stage('Get maven version from pom') {
