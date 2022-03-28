@@ -26,7 +26,5 @@ stages:
         echo See https://aka.ms/yaml
       displayName: 'Run a multi-line script'
   - job: Job2
-    pool:
-      vmImage: windows-latest
     steps:
       - script: echo Job2
